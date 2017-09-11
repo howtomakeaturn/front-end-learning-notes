@@ -3,18 +3,6 @@
 
 <script>
 
-  class ChildA extends React.Component {
-    render() {
-      return <h2>Child A</h2>;
-    }
-  }
-
-  class ChildB extends React.Component {
-    render() {
-      return <h2>Child B</h2>;
-    }
-  }
-
   class App extends React.Component {
     render() {
       return (
@@ -24,6 +12,18 @@
           <ChildB />
         </div>
       );
+    }
+  }
+
+  class ChildA extends React.Component {
+    render() {
+      return <h2>Child A</h2>;
+    }
+  }
+
+  class ChildB extends React.Component {
+    render() {
+      return <h2>Child B</h2>;
     }
   }
 
