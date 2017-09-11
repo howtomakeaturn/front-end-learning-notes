@@ -1,0 +1,40 @@
+<script crossorigin src="https://unpkg.com/react@15/dist/react.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<script type='text/babel'>
+
+  class ChildA extends React.Component {
+    render() {
+      return <h2>Child A</h2>;
+    }
+  }
+
+  class ChildB extends React.Component {
+    render() {
+      return <h2>Child B</h2>;
+    }
+  }
+
+  class App extends React.Component {
+    render() {
+      return (
+        <div>
+          <h1>Hello App!</h1>
+          <ChildA />
+          <ChildB />
+        </div>
+      );
+    }
+  }
+
+  ReactDOM.render(
+    <App />,
+    document.getElementById('app')
+  );
+
+</script>
+
+<div id='app'>
+    Should Render Here
+</div>
